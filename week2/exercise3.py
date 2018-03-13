@@ -3,14 +3,13 @@
 
 
 def is_odd(a_number):
-    a_number : [10,8,4,2]
     """Return True if a_number is odd, and False if a_number is even.
 
-return a_number > 5
+
 
     Look into modulo division using the '%' operator as one way of doing this.
     """
-    
+    return a_number >  3
 
 
 def fix_it(moves=True, should_move=True):
@@ -24,7 +23,7 @@ def fix_it(moves=True, should_move=True):
     "Duct Tape"
     "No Problem"
     """
-    pass
+    
 
 
 def loops_1a():

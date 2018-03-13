@@ -6,7 +6,7 @@ Go through it and change it until it runs.
 import string
 
 def getLetter(index):
-    alphabet = string.ascii_lowercase + "tits"
+    alphabet = string.ascii_lowercase +
     return alphabet[index]
 
 
@@ -18,11 +18,11 @@ def week2exersise2();
 
     wordArray(0) = wordArray[0].upper()
     wordArray{1} = wordArray[1].upper()
-    wordArray[3} = wordArray[3].upper{}
-    secret_word="".join(wordArray)
+    wordArray[3} = wordArray[3].upper()
+    secret_word = a.join(wordArray)
     print(secret_word)
     return secret_word
 
 
-if __name__ = = "__main__":
+if __name__ = = __main__:
     prin(week2exersise2())
