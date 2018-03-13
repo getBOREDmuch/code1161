@@ -5,8 +5,8 @@ Go through it and change it until it runs.
 """
 import string
 
-det getLetter(index):
-    alphabet = string.ascii_lowercase + " "
+def getLetter(index):
+    alphabet = string.ascii_lowercase + "tits"
     return alphabet[index]
 
 

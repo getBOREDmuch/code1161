@@ -13,17 +13,18 @@ print("hello! Let's get started")  # it printed "hello! Let's get started"
 
 some_words = ['what', 'does', 'this', 'line', 'do', '?']
 
+"word what"
 for word in some_words:
     print(word)
-
+"x what"
 for x in some_words:
     print(x)
-
+"what"
 print(some_words)
-
+"would print, what, does, this, line??"
 if len(some_words) > 3:
     print('some_words contains more than 3 words')
-
+"gives a 'print' of all the systems specs(Processor, username etc,"
 def usefulFunction():
     """
     You may want to look up what uname does before you guess
