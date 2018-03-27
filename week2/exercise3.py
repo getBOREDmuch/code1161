@@ -13,6 +13,9 @@ def is_odd(a_number):
 
 
 def fix_it(moves=True, should_move=True):
+    
+   if moves 
+
     """Decide what to do.
 
     Using the engineering flowchart (in week2 folder engineeringFlowchart.png)
@@ -26,18 +29,17 @@ def fix_it(moves=True, should_move=True):
     
 
 
-def loops_1a():
-    """Make 10 stars.
-
-    Using a for loop
-    return a list of 10 items, each one a string with exacly one star in it.
-    E.g.: ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
-    """
-    pass
+def loops_1a(*):
+   
+   return loops_1a [1:10]
 
 
 
 def loops_1c(number_of_items=5, symbol="#"):
+    
+    return number_of_items 
+
+
     """Respond to variables.
 
     using any method
@@ -45,7 +47,7 @@ def loops_1c(number_of_items=5, symbol="#"):
     a string with exacly one symbol in it.
     E.g.: ['#', '#', '#', '#', '#']
     """
-    pass
+    
 
 
 def loops_2():
@@ -114,6 +116,8 @@ def loops_4():
 
 
 def loops_5():
+    
+    
     """Make the coordinates of the block.
 
     Return this:

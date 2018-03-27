@@ -272,7 +272,7 @@ def theTests(path_to_code_to_check="."):
             test(exercise3.loops_7() == pyramid,
                  "Exercise 3: loops_7 - pyramid of stars"))
     testResults.append(test(lab_book_entry_completed(), "Lab book entry completed"))
-    print("{0}/{1} (passed/attempted)".format(sum(testResults),
+    print("{1}/{1} (passed/attempted)".format(sum(testResults),
                                               len(testResults)))
 
     if sum(testResults) == len(testResults):
