@@ -28,7 +28,29 @@ def binary_search(low, high, actual_number):
       tests aren't that smart yet.)
     """
 
-    return {"guess": guess, "tries": tries}
+array = [0,1,2,3,4,5,6,7,8]
+
+def binary_search(low, high, actual_number):
+    lowerBound = 0
+    upperbound = len(array)-1
+    found = false
+    while found == False and lowerBound<=upperBound:
+        midpoint= (lowerBound + upperBound)//2
+        if array [midpoint] == searchFor:
+            found = True
+            return found
+        elif array[midpoint]<searchFor:
+            lowerBound = midpoint + 1
+        else:
+            upperBound = midpoint -1
+    return found 
+    
+    searchFor = int (input("what are you searching for"))
+    if BinarySearch(searchFor, array):
+print ("item had been found")
+else 
+print ("not found")
+
 
 
 if __name__ == "__main__":
