@@ -7,17 +7,36 @@ Modify each function until the tests pass.
 
 
 
-def loop_ranger(start, stop=None, step=1):
+def lone_ranger(start, stop, step):
+    range(start[1], stop[6])
+    for i in range(start, stop):
+
+    return range
+
+print(lone_ranger()
+
+"""def loop_ranger(number_number_list, numbers):
+    yep=[]
+    for i in range(number_number_list)
+       yep.append(i)
+
+    return yep
+
+print(loop_range(10, numbers))"""
+
+   
     """Return a list of numbers between start and stop in steps of step.
 
     Do this using any method apart from just using range()
     """
-    pass
+
 
 
 def lone_ranger(start, stop, step):
+   
+   
+   
     """Duplicate the functionality of range.
-
     Look up the docs for range() and wrap it in a 1:1 way
     """
     pass

@@ -4,18 +4,14 @@
 
 def is_odd(a_number):
     """Return True if a_number is odd, and False if a_number is even.
-
-
-
     Look into modulo division using the '%' operator as one way of doing this.
     """
     return a_number >  3
 
+print (is_odd(0))
+
 
 def fix_it(moves=True, should_move=True):
-    
-   if moves 
-
     """Decide what to do.
 
     Using the engineering flowchart (in week2 folder engineeringFlowchart.png)
@@ -26,53 +22,73 @@ def fix_it(moves=True, should_move=True):
     "Duct Tape"
     "No Problem"
     """
-    
+    if moves :
+       return should_move
 
 
-def loops_1a(*):
+def loops_1a(number_of_items, symbol):
    
-   return loops_1a [1:10]
+    star=[]
+    for i in range (number_of_items):
+       star.append(symbol)
+    return star
+
+print(loops_1a(10, '*'))
 
 
+  
 
-def loops_1c(number_of_items=5, symbol="#"):
+
+def loops_1c(number_of_items, symbol):
+
     
-    return number_of_items 
+    hash=[]
+    for i in range (number_of_items):
+        hash.append(symbol)
 
 
-    """Respond to variables.
+    return hash
 
-    using any method
-    return a list of number_of_items items, each one
-    a string with exacly one symbol in it.
-    E.g.: ['#', '#', '#', '#', '#']
-    """
+
+print(loops_1c(5, "#"))
+
+
     
 
 
-def loops_2():
-    """Make a big square starfield.
+def loops_2(number_of_items, symbol, dodis):
+   
+    field=[]
+    tenfield=[]
+    for i in range (number_of_items):
+       field.append(symbol)
 
-    return a list of 10 items, each one a list of 10 items,
-    each one of those, a string with exacly one star in it.
-    E.g.: [
-            ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
-            ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
-            ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
-            ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
-            ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
-            ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
-            ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
-            ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
-            ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
-            ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
-          ]
-    """
-    pass
+    for i in range (dodis):
+        tenfield.append(field) 
+    
+    return tenfield
 
 
-def loops_3():
-    """Make a rising block of numbers.
+print(loops_2(10, '*', 10))
+
+   
+
+def loops_3(number_of_items, dois):
+   
+    greg=[]
+    gregswife=[]
+    for i in range (number_of_items):
+        greg.append(i)
+    for i in range(dois):
+        gregswife.append(greg)
+    
+    return greg
+
+    
+print(loops_3(10, 10))
+
+#
+"""Make a rising block of numbers.
 
     Return this:
     [
@@ -92,10 +108,10 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
-    pass
 
 
-def loops_4():
+
+def loops_4(number_of_items, dodis):
     """Make a block of numbers that rises left to right.
 
     Return this:
@@ -112,10 +128,30 @@ def loops_4():
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     ]
     """
-    pass
+    greg=[]
+    gregswife=[]
+    for i in range (number_of_items):
+        greg.append(i)
+    for i in range(dodis):
+        gregswife.append(greg)
+    
+    return greg
+
+    
+print(loops_4(10, 10))
 
 
-def loops_5():
+
+def loops_5(jays,numbers):
+
+    jayjays = []
+    nurmburs =[]
+    for i in range (jays):
+        jayjays.appned(i)
+
+    return jayjays
+
+print (loops_5(10, 10))
     
     
     """Make the coordinates of the block.
@@ -139,10 +175,23 @@ def loops_5():
         "There are {} green bottles".format(8)
     you'll come to see the pros and cons of each over time.
     """
-    pass
 
 
-def loops_6():
+
+def loops_6(number_of_items, dodis):
+
+    frank=[]
+    wow=[]
+    for i in range(number_of_items):
+        frank.append(i)
+    for i in range(dodis)
+        wow.append(frank)
+
+    return wow
+
+print(loops6())
+
+   
     """Make a wedge of numbers.
 
     Return this:
@@ -210,7 +259,7 @@ def lp(some_kind_of_list, exercise_name):
     else:
         print(exercise_name, "maybe you haven't got to this one yet?")
 
-
+"""
 if __name__ == "__main__":
     # this section does a quick test on your results and prints them nicely.
     # It's NOT the official tests, they are in tests.py as usual.
@@ -230,3 +279,4 @@ if __name__ == "__main__":
     lp(loops_5(), "loops_5")
     lp(loops_6(), "loops_6")
     lp(loops_7(), "loops_7")
+"""

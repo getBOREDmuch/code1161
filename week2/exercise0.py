@@ -1,58 +1,39 @@
-# -*- coding: UTF-8 -*-
-"""Modify each function until the tests pass."""
-
 
 def add_5(a_number):
-    return a_number + 5
+   a_number= 5
+    return a_number + 10
 
+print (add_5(0))
 
-
-    
-    """Return a number that is 5 bigger than number given.
-
-    This isn't a trick!
-    First thing to do is to remove the pass. That's just tellign python that
-    the empty block is intentional - it's python's "this page is intentionally
-    left blank"
-    Then you need to:
-        return a_number plus five
-    except expressed in python, not english
-    """
-    
 
 
 def adder(a_number, another_number):
-    """Add two numbers.
+    a_number = 10
+    another_number = 10
+    return a_number + another_number
 
-    Same as above, but with any two numbers.
-    """
-return a_number + another_number
+print (adder(0,0))
 
 
+    
 def shout(a_string):
-    """Return a string in uppercase.
-
-
-
-    look up the docs for string methods. Either in the official docs, here:
-        https://docs.python.org/2/library/string.html
-    or in any of the million places that google will give you.
-    "python make a string uppercase" is a good starting search query.
-    """
+    a_string = 'HELLO'
     return a_string
-    s.ascii_uppercase
+
+    
+print (shout(0))
+
+def really_shout(a_string,exc_point):
+   
+    a_string = 'HELLO'
+    exc_point = '!'
+    return a_string + exc_point
 
 
-def really_shout(a_string):
-    """Return a string in uppercase, with an exclamation mark on the end.
 
+    
+print (really_shout(0,0))
 
-    In the spirit of being DRY (don't repeat yourself) reuse the shout function
-    from above.
-    Look up how to 'concatinate' strings to make this happen.
-    """
-    return a_string
-    s.ascii_uppercase
 
 
 def shout_with_a_number(a_string, a_number):
@@ -63,8 +44,13 @@ def shout_with_a_number(a_string, a_number):
 
     HINT: Lookup how to cast a_number to a string or lookup how to use f-strings in python
     """
-   return shout_with_a_number('hello', 52)
+    a_string = 'please work, i want to get this '
+    a_string.upper()
+    a_number = '123'
+    
+    return a_string + a_number
 
+print (shout_with_a_number(0,0))
     
 
 
