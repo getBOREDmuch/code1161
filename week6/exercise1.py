@@ -4,6 +4,17 @@ from __future__ import division
 from __future__ import print_function
 import matplotlib
 import pandas as pd
+import csv
+
+f = open(pentaly_data_set_0.csv)
+
+csv_f = csv.reader(f)
+
+for row in csv_f:
+    
+print row[2]
+
+f.close()
 
 # load a csv
 

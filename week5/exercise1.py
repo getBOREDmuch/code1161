@@ -26,6 +26,8 @@ you'll need to figure out for yourself what to do.
 
 from __future__ import division
 from __future__ import print_function
+import time
+import sys
 
 
 # This is a terrible function. The rest of the functions in this file do a
@@ -61,7 +63,14 @@ def do_bunch_of_bad_things():
 # return a lit of countdown messages, much like in the bad function above.
 # It should say something different in the last message.
 def countdown(message, start, stop, completion_message):
-    pass
+
+for remaining in range(10, 0, -1):
+    sys.stdout.write("\r")
+    sys.stdout.write("{:2d} seconds remaining.".format(remaining))
+    sys.stdout.flush()
+    time.sleep(1)
+
+sys.stdout.write("\rComplete!            \n")
 
 
 # TRIANGLES

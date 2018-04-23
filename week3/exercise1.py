@@ -8,21 +8,21 @@ Modify each function until the tests pass.
 
 
 def lone_ranger(start, stop, step):
-    range(start[1], stop[6])
-    for i in range(start, stop):
+    
+    a = range(2)
+    for i in range(0,20,2):
+        return a
 
-    return range
+print(lone_ranger(0,0,0))
 
-print(lone_ranger()
-
-"""def loop_ranger(number_number_list, numbers):
+def loop_ranger(number_number_list):
     yep=[]
-    for i in range(number_number_list)
+    for i in range(4):
        yep.append(i)
 
     return yep
 
-print(loop_range(10, numbers))"""
+print(loop_ranger(10))
 
    
     """Return a list of numbers between start and stop in steps of step.
@@ -31,27 +31,52 @@ print(loop_range(10, numbers))"""
     """
 
 
+def loop_ranger(number_number_list):
+    yep=[]
+    for i in range(10):
+       yep.append(i)
 
-def lone_ranger(start, stop, step):
-   
-   
+    return yep[1:5]
+
+print(loop_ranger(5))
    
     """Duplicate the functionality of range.
     Look up the docs for range() and wrap it in a 1:1 way
     """
-    pass
 
 
 def two_step_ranger(start, stop):
+ 
+    yep=[]
+    for i in range(0,20,2):
+       yep.append(i)
+
+    return yep[1:5]
+
+print (two_step_ranger(0,0))
+ 
+ 
+ 
     """Make a range that steps by 2.
 
     Sometimes you want to hide complexity.
     Make a range function that always has a step size of 2
     """
-    pass
 
 
 def gene_krupa_range(start, stop, even_step, odd_step):
+    odd_numbers = []
+    even_numbers = []
+    for i in range(0,20,2):
+        even_numbers.append(i)
+        
+    for i in range (2,1,21):
+        odd_step.append(i)
+        
+        return even_numbers
+    
+print (gene_krupa_range(1,10,2,3))
+   
     """Make a range that has two step sizes.
 
     make a list that instead of having evenly spaced steps
@@ -61,12 +86,18 @@ def gene_krupa_range(start, stop, even_step, odd_step):
 
 
 def stubborn_asker(low, high):
+    
+    a_list = range(10)
+    return a_list [2]
+
+print (stubborn_asker(0,0))
+
     """Ask for a number between low and high until actually given one.
 
     Ask for a number, and if the response is outside the bounds keep asking
     until you get a number that you think is OK
     """
-    pass
+  
 
 
 def not_number_rejector(message):

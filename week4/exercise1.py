@@ -16,6 +16,8 @@ if LOCAL != CWD:
 
 
 def success_is_relative():
+   
+ LOCAL = 
     """Read from a file.
 
     Read the success message from week 1, but from here, using a relative path.
@@ -28,7 +30,7 @@ def success_is_relative():
     # this depends on excecution context. Take a look at your CWD and remember
     # that it changes.
     # print(path, CWD)
-    pass
+print (path)
 
 
 def get_some_details():

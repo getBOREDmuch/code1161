@@ -1,12 +1,6 @@
-# -*- coding: UTF-8 -*-
-"""Run the tests.
 
-This file tests your code. It'll check that the work in each
-of the exercise files does what it's supposed to.
-"""
 
 # TODO replace flake8 with yapf or calm flake8 down
-
 
 import imp
 import os
