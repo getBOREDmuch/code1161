@@ -144,12 +144,10 @@ print(loops_4(10, 10))
 
 def loops_5(jays,numbers):
 
-    jayjays = []
-    nurmburs =[]
-    for i in range (jays):
-        jayjays.appned(i)
+    for j in range (0, 10):
+        for i in range (0,10):
 
-    return jayjays
+            return j + i
 
 print (loops_5(10, 10))
     
@@ -214,7 +212,7 @@ print(loops6())
     pass
 
 
-def loops_7():
+
     """Make a pyramid.
 
     Return this:
@@ -235,7 +233,13 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
-    pass
+ def loops_7():
+    
+    j=9
+    for i in range (1,10,2):
+
+print (loops_7(' '*j+i*'*'))
+j=j-1
 
 
 def lp(some_kind_of_list, exercise_name):

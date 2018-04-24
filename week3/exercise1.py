@@ -70,7 +70,7 @@ def gene_krupa_range(start, stop, even_step, odd_step):
     for i in range(0,20,2):
         even_numbers.append(i)
         
-    for i in range (2,1,21):
+    for i in range (0,20,3):
         odd_step.append(i)
         
         return even_numbers

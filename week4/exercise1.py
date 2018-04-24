@@ -59,6 +59,9 @@ def get_some_details():
 
 
 def wordy_pyramid():
+   
+   words = ['a, bb, cc, ddd, eeee, fffff, ggggg']
+   
     """Make a pyramid out of real words.
 
     There is a random word generator here: http://www.setgetgo.com/randomword/
