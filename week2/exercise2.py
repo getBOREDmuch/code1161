@@ -6,12 +6,11 @@ Go through it and change it until it runs.
 import string
 
 def getLetter(index):
-    alphabet = 'distinctionaverage'
+    string = "oli is a screw"
     
-    return alphabet [0:1]
+    return string[index-2:index]
 
 print(getLetter(0))
-
 
 
 def week2exersise2(secret_word):
