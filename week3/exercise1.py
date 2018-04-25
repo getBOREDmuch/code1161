@@ -85,12 +85,20 @@ print (gene_krupa_range(1,10,2,3))
     pass
 
 
-def stubborn_asker(low, high):
     
-    a_list = range(10)
-    return a_list [2]
+def stubourn_asker(high = 20, low = 4):
+    while True:
+        print("Tell me a number")
+        number = input()
+        if int(number) > 4 and int(number) < 20 :
+            print("cool man")
+            break
+        else:
+            print("guess again chump")
+            print()
+            
 
-print (stubborn_asker(0,0))
+stubourn_asker()
 
     """Ask for a number between low and high until actually given one.
 
@@ -101,22 +109,36 @@ print (stubborn_asker(0,0))
 
 
 def not_number_rejector(message):
-    """Ask for a number repeatedly until actually given one.
+  while True:
+    try:
+       userInput = int(input(message))       
+    except ValueError:
+       print("thats a not a INT Number!!!!")
+       continue
+    else:
+       return userInput 
+       break 
+     
+number = inputNumber("give me a number, bru:")
 
-    Ask for a number, and if the response is actually NOT a number (e.g. "cow",
-    "six", "8!") then throw it out and ask for an actual number.
-    When you do get a number, return it.
-    """
-    pass
+def super_asker(low = 4, high = 20):
+    print ("guess me a number")
+    while True:
+        number = input()
+        try :
+            num = int(number)
+            if num > 4 and num < 20 :
+                print ("yeh you did it buddy")
+                break  
+            else:
+                print("try again, thats a number tho")
+        except ValueError :
+            print ("thats not a number!!")
+        
 
-
-def super_asker(low, high):
-    """Robust asking function.
-
-    Combine stubborn_asker and not_number_rejector to make a function
-    that does it all!
-    """
-    pass
+         
+        
+super_asker()
 
 
 if __name__ == "__main__":
