@@ -13,25 +13,27 @@ import time
 
 
 def greet(name="Towering Timmy"):
-    
-    
-    """Return a greeting.
+   """Return a greeting.
 
     return a string of "Hello" and the name argument.
     E.g. if given as "Towering Timmy" it should return "Hello Towering Timmy"
     """
-    pass
+  
+    return "Hello " + str(name)
+
+print(greet())
 
 
 def three_counter(input_list=[1, 4, 3, 5, 7, 1, 3, 2, 3, 3, 5, 3, 7]):
     
-    
-    """Count the number of 3s in the input_list.
 
-    Return an integer.
-    TIP: the test will use a different input_list, so don't just return 5
-    """
-    pass
+    counter = 0
+    for item in input_list:
+        if item == 3:
+            counter += 1
+    return counter
+
+print (three_counter())
 
 
 def fizz_buzz():
@@ -48,9 +50,27 @@ def fizz_buzz():
     Return a list that has an integer if the number isn't special, and a string
     if it is. E.g. [1, 2, "Fizz", 4, "Buzz", 6, 7, ...]
     """
+
+
     fizzBuzzList = []
     # your code here
+    for i in range (101):
+        if i%5 == 0 and i%3 == 0:
+            fizzBuzzList.append("FizzBuzz")
+        elif i%5 == 0:
+            fizzBuzzList.append("Fizz")
+        elif i%3 == 0:
+            fizzBuzzList.append("Buzz")
+            
+       
+        else:
+            fizzBuzzList.append(i)
+            
+
+
     return fizzBuzzList
+
+print(fizz_buzz())
 
 
 def put_behind_bars(input_string="very naughty boy"):
@@ -73,7 +93,13 @@ def pet_filter(letter="a"):
             "bali cattle", "gayal", "turkey", "goldfish", "rabbit", "koi",
             "canary", "society finch", "fancy mouse", "siamese fighting fish",
             "fancy rat and lab rat", "mink", "red fox", "hedgehog", "guppy"]
-    pass
+      in_list = []
+    for i in pets:
+        if letter in i:
+            in_list.append(i)
+    return in_list
+
+print (pet_filter())  
 
 
 def best_letter_for_pets():

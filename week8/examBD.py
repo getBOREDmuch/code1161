@@ -12,13 +12,15 @@ import time
 
 
 def greet(name="Towering Timmy"):
-    """Return a greeting.
+   """Return a greeting.
 
     return a string of "Hello" and the name argument.
     E.g. if given as "Towering Timmy" it should return "Hello Towering Timmy"
     """
+  
     return "Hello " + str(name)
-    pass
+
+print(greet())
 
 
 def three_counter(input_list=[1, 4, 3, 5, 7, 1, 3, 2, 3, 3, 5, 3, 7]):
@@ -32,7 +34,7 @@ def three_counter(input_list=[1, 4, 3, 5, 7, 1, 3, 2, 3, 3, 5, 3, 7]):
         if item == 3:
             counter += 1
     return counter
-    pass
+
 
 
 def fizz_buzz():

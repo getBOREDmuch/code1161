@@ -16,8 +16,14 @@ if LOCAL != CWD:
 
 
 def success_is_relative():
-   
- LOCAL = 
+    path_to_file = CWD ="\\lazyduck.json"
+
+with open(path_to_file) as jayson:
+    text= jayson.read()
+
+print (text)
+
+
     """Read from a file.
 
     Read the success message from week 1, but from here, using a relative path.
